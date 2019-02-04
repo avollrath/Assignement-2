@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+padding:0;
+margin:0;
+box-sizing: border-box;
+
+}
+
+img {
+
+max-width: 100%;
+
+}
+
+
+.header-box1 {
+margin:auto;
+display: flex;
+background-color: rgb(65, 65, 65);
+width: 100vw;
+color:#fff;
+justify-content: center;
+
+
+}
+
+
+.header-box1 h1 {
+
+   text-transform: uppercase;
+    
+    
+    }
+
+
+
+
+.header-box1 .right-box {
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+
+
+.header-box1 .left-box img{
+
+    width:30vw;
+    
+    }
+
+
+
+.header-box1 .right-box .btn {
+
+height:60px;
+width:300px;
+background-color: rgb(92, 160, 224);
+text-transform: uppercase;
+color: white;
+font-weight:bold;
+font-size: 1.4rem;
+text-align: center;
+line-height:60px;
+border-radius: 5px;
+}
+
+
+.header-box2 {
+
+height: 150px;
+background-color: rgb(65, 65, 65);
+
+}
+
+
+.header-box2 p{
+    font-size: 2rem;
+    color:white;
+    text-transform: uppercase;
+}
+
+
+.foreground-box{
+
+    margin: auto;
+    background-color: rgb(92, 160, 224);
+    width:80vw;
+    height:150px;
+    display: flex;
+    padding: 0 6vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-box2 .foreground-box .btn {
+
+    height:60px;
+    width:300px;
+    background-color: rgb(243, 243, 243);
+    text-transform: uppercase;
+    color: rgb(92, 160, 224);
+    font-weight:bold;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height:60px;
+    border-radius: 5px;
+    }
+
+
+    .bg-pattern {
+        
+        height:10px;
+        width:100%;
+        background-image: url("/assets/img/Border-BG.jpg");
+        background-size: 70px 70px;
+
+    }
+
+    .bg-pattern-testimonial {
+        
+        height:10px;
+        width:100%;
+        background-image: url("/assets/img/Border-BG.jpg");
+        background-size: 70px 70px;
+
+    }
+
+
+
+    .bg-pattern-development {
+        
+        height:10px;
+        width:100%;
+        background-image: url("/assets/img/Border-BG.jpg");
+        background-size: 70px 70px;
+
+    }
+
+
+
+.box-container {
+
+display: flex;
+width:80vw;
+margin:auto;
+
+}
+
+
+
+    .main-box {
+
+display:flex;
+flex-direction: column;
+width:15vw;
+margin:6vh auto;
+text-align: center;
+align-items: center;
+    }
+
+
+
+
+    .main-box .dot {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(92, 160, 224);
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+
+
+    .main-box h2{
+text-transform: uppercase;
+margin: 2vh 0;
+font-size: 1.3rem;
+    }
+  
+
+    .main-box .btn {
+
+        margin: 2vh 0;
+        height:30px;
+        width:100px;
+        background-color: rgb(92, 160, 224);
+        text-transform: uppercase;
+        color: #fff;
+        font-weight:bold;
+        font-size: 1rem;
+        text-align: center;
+        line-height:30px;
+        border-radius: 5px;
+
+    }
+
+    
+.grid-container {
+
+margin: 10vh auto;
+width:80vw;
+grid-gap:1vw;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 
+"bg bg bg"
+"bbox bbox bbox"
+"testi testi develop"
+"box1a box1b dbox1a"
+"box2a box2b dbox1a";
+
+    }
+
+
+.grid-container .bg-pattern {
+
+    text-align: center;
+    grid-area: bg;
+    
+    } 
+
+
+  .grid-container .bg-pattern h3{
+
+    
+        display: inline;
+        padding: 0 3vw;
+        background-color: #fff;
+        text-transform: uppercase;
+        }
+
+
+
+    .grid-container h3 {
+color: rgb(156, 156, 156);
+        
+            }
+
+
+    .grid-container .blog-box{
+
+background-color:rgb(155, 232, 255);
+
+
+    }
+
+
+
+    .grid-container .blog-box img{
+
+width:100%;
+
+    }
+
+
+    .grid-container .blog-box h3 {
+
+        padding: 1vh 2vw 0 2vw;
+    }  
+    
+    
+    .grid-container .blog-box p {
+
+        padding: 0vh 2vw 2vh 2vw;
+    }      
+
+
+
+
+    .grid-container .bg-pattern-testimonial {
+
+        text-align: center;
+        grid-area: testi;
+        
+        } 
+    
+    .grid-container .bg-pattern-testimonial h3{
+    
+        
+        display: inline;
+        padding: 0 3vw;
+       background-color: #fff;
+        text-transform: uppercase;
+        }
+
+
+
+  .grid-container .bg-pattern-development {
+
+                text-align: center;
+                grid-area: develop;
+                
+                } 
+            
+                .grid-container .bg-pattern-development h3{
+            
+                
+                    display: inline;
+                    padding: 0 3vw;
+                    background-color: #fff;
+                    text-transform: uppercase;
+                    }
+
+
+  .testimonial-box1a {
+grid-area: box1a;
+
+    }
+
+ .testimonial-box1b {
+ grid-area: box1b;
+        
+            }
+
+ .testimonial-box2a {
+
+ grid-area: box2a;
+                
+                    }
+
+        .testimonial-box2b {
+
+        grid-area: box2b;
+                        
+                            }
+
+
+                 .development-box1a {
+
+                     grid-area: dbox1a;
+                                
+                                    }
+
+
+
+
+.testimonial-box1a{
+  background-color:rgb(155, 232, 255);
+   }
+                                        
+.testimonial-box1a h3 {
+   padding: 1vh 2vw 0 2vw;
+  }  
+.testimonial-box1a p {
+ padding: 0vh 2vw 2vh 2vw;
+  }          
+  
+  
+
+
+
+  .testimonial-box1b{
+    background-color:rgb(155, 232, 255);
+     }
+                                          
+  .testimonial-box1b h3 {
+     padding: 1vh 2vw 0 2vw;
+    }  
+  .testimonial-box1b p {
+   padding: 0vh 2vw 2vh 2vw;
+    }    
+
+
+
+
+    .testimonial-box2a{
+        background-color:rgb(155, 232, 255);
+         }
+                                              
+      .testimonial-box2a h3 {
+         padding: 1vh 2vw 0 2vw;
+        }  
+      .testimonial-box2a p {
+       padding: 0vh 2vw 2vh 2vw;
+        }    
+
+
+
+
+        .testimonial-box2b{
+            background-color:rgb(155, 232, 255);
+             }
+                                                  
+          .testimonial-box2b h3 {
+             padding: 1vh 2vw 0 2vw;
+            }  
+          .testimonial-box2b p {
+           padding: 0vh 2vw 2vh 2vw;
+            }    
+
+
+            .development-box1a{
+                background-color:rgb(155, 232, 255);
+                 }
+                                                      
+              .development-box1a h3 {
+                 padding: 1vh 2vw 0 2vw;
+                }  
+              .development-box1a p {
+               padding: 0vh 2vw 2vh 2vw;
+                }    
