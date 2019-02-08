@@ -118,7 +118,7 @@ text-shadow: 1px 2px 6px rgba(0,0,0,0.37);
 
 height:6vh;
 width:16vw;
-background-color: #458ed3;
+background: linear-gradient(45deg, #458ed3 0%,#73a3d1 100%);
 text-transform: uppercase;
 color: white;
 font-weight:bold;
@@ -128,6 +128,7 @@ line-height:6vh;
 border-radius: 5px;
 border:none;
 cursor:pointer;
+box-shadow: inset -1px 2px 5px 2px rgba(255,255,255,0.55);
 }
 
 
@@ -171,15 +172,16 @@ cursor:pointer;
         margin: 2vh 0;
         height:3vh;
         width:6vw;
-        background-color: #458ed3;
+        background: linear-gradient(45deg, #458ed3 0%,#73a3d1 100%);
         text-transform: uppercase;
         color: #fff;
         font-weight:bold;
         font-size: 1rem;
         text-align: center;
-        line-height:30px;
+        line-height:3vh;
         border-radius: 5px;
         border:none;
+        box-shadow: inset -1px 2px 5px -2px rgba(255,255,255,0.55);
     
 
     }
@@ -190,7 +192,7 @@ cursor:pointer;
         background-color: #6fb2f0;
         transition: 100ms ease-in-out;
         box-shadow: 43px 29px 118px -42px rgba(0,0,0,0.75);
-    
+        cursor: pointer;
     }    
 
 
@@ -215,7 +217,7 @@ margin:auto;
 .foreground-box{
 
     margin: auto;
-    background-color:#458ed3;
+    background: linear-gradient(45deg, #458ed3 0%,#73a3d1 100%);
     width:80vw;
     height:100px;
     display: flex;
@@ -254,8 +256,9 @@ margin:auto;
         height:10px;
         width:100%;
         background-image: url("/assets/img/Border-BG.jpg");
-        background-size: 70px 70px;
+        background-size: 30px 30px;
         margin:auto;
+        background-position: center; 
 
     }
 
@@ -264,7 +267,7 @@ margin:auto;
         height:10px;
         width:100%;
         background-image: url("/assets/img/Border-BG.jpg");
-        background-size: 70px 70px;
+        background-size: 30px 30px;
 
     }
 
@@ -275,7 +278,7 @@ margin:auto;
         height:10px;
         width:100%;
         background-image: url("/assets/img/Border-BG.jpg");
-        background-size: 70px 70px;
+        background-size: 30px 30px;
 
     }
 
@@ -329,7 +332,9 @@ font-size: 1.3rem;
 
 background-color: #fff;
 box-shadow: 43px 29px 118px -42px rgba(0,0,0,0.75);
-transition: 400ms ease-out;
+transition: 200ms ease-out;
+cursor: pointer;
+
 
     }
 
@@ -356,7 +361,7 @@ transition: 400ms ease-out;
 
     .main-box:hover .dot {
 
-        background: linear-gradient(45deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+        background: linear-gradient(45deg, #458ed3 0%,#73a3d1 100%);
         transition: 400ms ease-out;
     }
 
@@ -396,6 +401,7 @@ grid-template-areas:
 "testi testi develop"
 "box1a box1b dbox1a"
 "box2a box2b dbox1a";
+
 
     }
 
@@ -620,6 +626,7 @@ box-shadow: 10px 10px 96px -29px rgba(0,0,0,1);
                      padding-bottom:3vh;
                      position: relative;
                      box-shadow: 35px 65px 134px -63px rgba(0,0,0,0.53);
+                     overflow: hidden;
                      
                    
                                 
@@ -787,7 +794,27 @@ footer .box-container .flicker-box .flbox{
     width: 4.2vw;
     height: 4.2vw;
     margin-bottom:0.6vh;
+    transition: 100ms ease-in-out;
 
+
+}
+
+
+
+footer .box-container .flicker-box .flbox:hover{
+
+    transform: scale(1.05);
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+ 
+ 
+ }
+
+
+.flbox img {
+
+width: 100%;
+transition: 600ms ease-in-out;
 
 }
 
@@ -795,9 +822,9 @@ footer .box-container .flicker-box .flbox{
 
 
 .footer-box h4{
-
-text-transform:uppercase;
-
+    
+    text-transform:uppercase;
+    
 }
 
 
@@ -805,6 +832,16 @@ text-transform:uppercase;
 color: #6f6f6f;
     
     }
+
+
+    .footer-box p:hover{
+        color:  #458ed3;
+        cursor:pointer;
+
+            
+            }
+
+
 
 
 
@@ -842,7 +879,7 @@ text-transform: uppercase;
 
 footer i {
 
-    font-size:3rem;
+    font-size:2rem;
     color: #252525;
 }
 
@@ -879,6 +916,9 @@ font-size: 4rem;
 }
 
 
+
+
+
 /* Tabs mit radio-Buttons */
 .tabbed figure { 
     display: block; 
@@ -899,6 +939,8 @@ font-size: 4rem;
  }
 
 
+
+
  #tab1:checked ~ figure .tab1,
 #tab2:checked ~ figure .tab2  { display: block; }
 
@@ -910,6 +952,7 @@ nav label {
     color: rgb(173, 173, 173);
     width:150px;
     text-align: center;
+    box-shadow: 2px 0px 21px -8px rgba(0,0,0,0.75);
 
  }
  
@@ -956,7 +999,359 @@ z-index: 1000;
 top:0;
 left:300px;
 
+
  }
+
+
+
+
+
+
+
+/* Media Queries ########################################################################################################################################################## */
+
+
+ 
+@media only screen and (max-width: 1024px) {
+   
+
+
+
+    .header-box1 {
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        background-color:#404040;
+        width: 100%;
+        color:#fff;
+        justify-content: center;
+        padding-bottom: 2vh;
+
+        
+        
+        }
+
+
+        .header-box1 .right-box {
+
+            display: flex;
+            margin:auto;
+            flex-direction: column;
+            justify-content: space-around;
+            text-shadow: 1px 2px 6px rgba(0,0,0,0.37);
+            text-align: center;
+            margin-bottom:3vh;
+            
+            }
+
+
+            .header-box1 .right-box h1{
+
+                margin-bottom:4vh;
+            }
+                
+
+
+            .header-box1 .left-box img{
+
+                width:30vw;
+                min-width:300px;
+                
+                }
+
+
+                .header-box1 .left-box{
+
+
+                    margin:auto;
+
+
+                }       
+                
+                
+
+                .btn-read {
+
+                    margin: 2vh 0;
+                    height:3vh;
+                    width:60vw;
+                    background: linear-gradient(45deg, #458ed3 0%,#73a3d1 100%);
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight:bold;
+                    font-size: 1rem;
+                    text-align: center;
+                    line-height:3vh;
+                    border-radius: 5px;
+                    border:none;
+                    box-shadow: inset -1px 2px 5px -2px rgba(255,255,255,0.55);
+                
+            
+                }                
+
+
+                .btn-blue {
+
+                    height:4vh;
+                    margin:3vh auto;
+                    width:80vw;
+                    background: linear-gradient(45deg, #458ed3 0%,#73a3d1 100%);
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight:bold;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    line-height:4vh;
+                    border-radius: 5px;
+                    border:none;
+                    cursor:pointer;
+                    box-shadow: inset -1px 2px 5px 2px rgba(255,255,255,0.55);
+                    }
+
+
+                    .btn-white {
+
+                        
+                       
+                    margin:1vh auto;
+                        height:6vh;
+                        width:80vw;
+                        background-color:#f0f5ef;
+                        text-transform: uppercase;
+                        color: #458ed3;
+                        font-weight:bold;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        line-height:4vh;
+                        border-radius: 5px;
+                        border:none;
+                        cursor:pointer;
+                        }
+
+
+
+
+
+                        .header-box2 {
+
+                            height: 10vh;
+                            background-color: rgb(65, 65, 65);
+                            width: 100%;
+                            margin:auto;
+                            
+                            }                        
+
+
+                        .foreground-box{
+
+                            margin: 0 auto;
+                            background: linear-gradient(45deg, #458ed3 0%,#73a3d1 100%);
+                            width:90vw;
+                            height:10vh;
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            padding: 0;
+                            
+                            
+                            font-size: 1rem;
+                            color: white;
+                            text-transform: uppercase;
+                            
+                        }     
+
+
+
+                        .foreground-box:after {
+                            border-style: solid;
+                            border-width: 40px 40px 0 0;
+                            border-color:  #458ed3 transparent transparent transparent;
+                            top: 99%;
+                            content: "";
+                            position: absolute;
+                            left: 0px;
+                            width: 0; 
+                            height: 0;
+                        
+                        }
+
+
+
+
+                        
+                        
+                        .foreground-box p{
+
+margin-top:1vh;
+                            font-size:1rem;
+
+                        }                        
+
+
+
+
+
+
+    .box-container {
+
+        display: flex;
+        width:95vw;
+        margin:6vh auto;
+        flex-direction: column;
+        
+        }
+
+
+        .main-box {
+
+            display:flex;
+            flex-direction: column;
+            width:95vw;
+            margin:6vh auto;
+            text-align: center;
+            align-items: center;
+            padding:20px;
+            position: relative;
+                }        
+
+
+
+     
+
+
+
+
+                .grid-container {
+
+                    margin: 10vh auto;
+                    width:90vw;
+                    grid-gap:5vh;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-areas: 
+                    "bg"
+                    "bbox"
+                    "testi"
+                    
+                    "box1a"
+                     "box1b"
+                    "box2a" 
+                    "box2b"
+                    "develop"
+                    "dbox1a";
+                    
+                        }
+                        
+                        
+
+                        .grid-container .blog-box{
+
+                            background-color: #fff;
+                            position: relative;
+                            margin-bottom:2vh;
+                            box-shadow: 10px 10px 96px -29px rgba(0,0,0,1);
+                            
+                            
+                                }
+
+
+ footer .box-container {
+  display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ width: 95vw;
+ padding: 3vh 0;
+ margin: auto;
+ }
+
+
+ 
+footer .box-container .footer-box {
+
+    width:95vw;
+    text-align: center;
+   margin-bottom:4vh;
+   padding-bottom:3vh;
+   border-bottom: 1px white solid;
+  
+  }
+
+
+
+  footer .box-container .flicker-box .flbox{
+
+    background-color: #252525;
+     width: 20vw;
+     height: 20vw;
+     margin-bottom: 2vh;
+     transition: 100ms ease-in-out;
+ 
+ 
+ }
+
+ .social-box {
+
+flex-direction: column;
+
+ }
+
+ .social-box p {
+
+
+font-size: 0.6rem;
+
+
+ }
+
+
+
+ .social-container {
+
+margin:auto;
+    display: flex;
+    align-items: center;
+    width:60vw;
+    justify-content: space-around;
+   
+
+    
+    }
+    
+    #up-icon {
+    
+    margin-top:10vh;
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: 8rem;
+    
+    } 
+
+
+
+    footer .bottom-box {
+
+
+        height:60vh;
+        background-color: #343434;
+        text-align: center;
+        line-height: 10vh;
+        color: #6f6f6f;
+        position: relative;
+        
+        
+        }
+
+
+ 
+                            
+                            
+                            
+                                        }                        
+
+
+
+
 
 
 
