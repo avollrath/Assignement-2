@@ -255,7 +255,7 @@ margin:auto;
         
         height:10px;
         width:100%;
-        background-image: url("/assets/img/Border-BG.jpg");
+        background-image: url("/assets/img/border-bg.jpg");
         background-size: 30px 30px;
         margin:auto;
         background-position: center; 
@@ -266,7 +266,7 @@ margin:auto;
         
         height:10px;
         width:100%;
-        background-image: url("/assets/img/Border-BG.jpg");
+        background-image: url("/assets/img/border-bg.jpg");
         background-size: 30px 30px;
 
     }
@@ -277,7 +277,7 @@ margin:auto;
         
         height:10px;
         width:100%;
-        background-image: url("/assets/img/Border-BG.jpg");
+        background-image: url("/assets/img/border-bg.jpg");
         background-size: 30px 30px;
 
     }
@@ -1182,7 +1182,7 @@ left:300px;
                         
                         .foreground-box p{
 
-margin-top:1vh;
+                            margin-top:1vh;
                             font-size:1rem;
 
                         }                        
