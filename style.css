@@ -807,7 +807,6 @@ footer .box-container .flicker-box .flbox:hover{
     transition: 100ms ease-in-out;
     cursor: pointer;
  
- 
  }
 
 
@@ -819,6 +818,47 @@ transition: 600ms ease-in-out;
 }
 
 
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+ 
+ .tooltip .hover-text {
+    visibility: hidden;
+    width: 70px;
+    background-color: #585858;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 1.1rem;
+    top: -1.5rem;
+    border-radius: 1px;
+  }
+ 
+  .hover-text {
+      font-size: 0.8rem;
+  }
+ 
+  .tooltip:hover .hover-text {
+    visibility: visible;
+  }
+ 
+  .tooltip:hover .hover-text::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    color: #585858;
+    border-top: 1vw solid ;
+    border-right: 1vw solid transparent;
+    top: 100%;
+    left: 0px;
+  }
 
 
 .footer-box h4{
